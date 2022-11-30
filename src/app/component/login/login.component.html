@@ -1,0 +1,28 @@
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+
+            <div class="vid-container"> 
+                <div class="inner-container">
+                    <div class="box">
+                        <h1>Login</h1>
+                        <form #loginform="ngForm" novalidate (ngSubmit)="onSubmit()">
+                            <input type="text" placeholder="Email" required name="email" [(ngModel)]="email" />
+                            <input type="password" placeholder="Password" required name="pwd" [(ngModel)]="password"/>
+                            <input type="text" placeholder="usertype" required name="u_type" [(ngModel)]="usertype"/>
+                            <button>Login</button>
+                            <a
+                                [routerLink]="['/user']"
+                                class="nav-link focus--box-shadow"
+                                role="menuitem"
+                                aria-label="Favorite projects"
+                                >
+                                <p (click)="show2()">Not a member? Sign Up</p> 
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
